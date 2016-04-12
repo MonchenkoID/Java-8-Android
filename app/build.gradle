@@ -10,6 +10,13 @@ android {
         targetSdkVersion 'N'
         versionCode 1
         versionName "1.0"
+        jackOptions{
+            enabled true
+        }
+    }
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
     }
     buildTypes {
         release {
