@@ -8,9 +8,31 @@ import java.util.function.Supplier;
  */
 public class ReferenceBoundNonStatic {
 
+    private static final String STRING = "method references are cool";
+
     public static void run(){
-        String s = "method references are cool";
-        print(s::toString);
+        methodReference();
+        lambda();
+        anonymousClass();
+    }
+
+    private static void anonymousClass() {
+        print(new Supplier<String>()
+        {
+            @Override
+            public String get()
+            {
+                return STRING.toString(); // closes over s
+            }
+        });
+    }
+
+    private static void lambda() {
+        print(() -> STRING.toString());
+    }
+
+    private static void methodReference() {
+        print(STRING::toString);
     }
 
     public static void print(Supplier<String> supplier)
