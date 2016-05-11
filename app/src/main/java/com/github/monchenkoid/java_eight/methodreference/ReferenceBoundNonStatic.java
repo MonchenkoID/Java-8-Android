@@ -1,5 +1,7 @@
 package com.github.monchenkoid.java_eight.methodreference;
 
+import android.util.Log;
+
 import java.util.function.Supplier;
 
 /**
@@ -8,6 +10,7 @@ import java.util.function.Supplier;
  */
 public class ReferenceBoundNonStatic {
 
+    private static final String TAG = ReferenceBoundNonStatic.class.getSimpleName();
     private static final String STRING = "method references are cool";
 
     public static void run(){
@@ -37,6 +40,6 @@ public class ReferenceBoundNonStatic {
 
     public static void print(Supplier<String> supplier)
     {
-        System.out.println(supplier.get());
+        Log.i(TAG, supplier.get());
     }
 }

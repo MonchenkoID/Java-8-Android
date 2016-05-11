@@ -1,5 +1,7 @@
 package com.github.monchenkoid.java_eight.function;
 
+import android.util.Log;
+
 import java.util.function.Supplier;
 
 /**
@@ -9,11 +11,12 @@ import java.util.function.Supplier;
 
 public class JavaSupplier {
 
+    private static final String TAG = JavaSupplier.class.getSimpleName();
     static Supplier<String> supplier1 = () -> "String1";
     static Supplier<String> supplier2 = () -> "String2";
 
     public static void printSuppliedString(Supplier<String> supplier) {
-        System.out.println(supplier.get());
+        Log.i(TAG, supplier.get());
     }
 
     public static void run() {

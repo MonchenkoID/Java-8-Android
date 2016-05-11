@@ -1,5 +1,7 @@
 package com.github.monchenkoid.java_eight.function;
 
+import android.util.Log;
+
 import java.util.function.Consumer;
 
 /**
@@ -9,8 +11,9 @@ import java.util.function.Consumer;
 
 public class JavaConsumer {
 
-    static Consumer<String> function = x -> System.out.println(x);
-    static Consumer<String> function2 = x -> System.out.println(x.toLowerCase());
+    private static final String TAG = JavaConsumer.class.getSimpleName();
+    static Consumer<String> function = x -> Log.i(TAG, x);
+    static Consumer<String> function2 = x -> Log.i(TAG, x.toLowerCase());
 
     public static void consumeString(Consumer<String> consumer, String x) {
         consumer.accept(x);

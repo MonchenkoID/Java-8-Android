@@ -1,5 +1,7 @@
 package com.github.monchenkoid.java_eight.function;
 
+import android.util.Log;
+
 import java.util.function.BiPredicate;
 
 /**
@@ -8,11 +10,13 @@ import java.util.function.BiPredicate;
  */
 public class JavaBiPredicate {
 
+    private static final String TAG = JavaBiPredicate.class.getSimpleName();
+
     public static void run() {
         BiPredicate<Integer, String> condition = (i, s)-> i>20 && s.startsWith("R");
-        System.out.println(condition.test(10,"Ram"));
-        System.out.println(condition.test(30,"Shyam"));
-        System.out.println(condition.test(30,"Ram"));
+        Log.i(TAG, String.valueOf(condition.test(10,"Ram")));
+        Log.i(TAG, String.valueOf(condition.test(30,"Shyam")));
+        Log.i(TAG, String.valueOf(condition.test(30,"Ram")));
     }
 
 }

@@ -1,5 +1,7 @@
 package com.github.monchenkoid.java_eight.methodreference;
 
+import android.util.Log;
+
 import java.util.function.Function;
 
 /**
@@ -8,6 +10,7 @@ import java.util.function.Function;
  */
 public class ReferenceUnBoundNonStatic {
 
+    private static final String TAG = ReferenceUnBoundNonStatic.class.getSimpleName();
     private static final String STRING = "some string to be printed";
 
     public static void run() {
@@ -35,6 +38,6 @@ public class ReferenceUnBoundNonStatic {
     }
 
     public static void print(Function<String, String> function, String value) {
-        System.out.println(function.apply(value));
+        Log.i(TAG, function.apply(value));
     }
 }

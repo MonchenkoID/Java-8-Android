@@ -1,10 +1,14 @@
 package com.github.monchenkoid.java_eight.methodreference;
 
+import android.util.Log;
+
 /**
  * @author Iryna Monchenko
  * @version on 05.05.2016
  */
 public class ReferenceStaticMethod {
+
+    private static final String TAG = ReferenceStaticMethod.class.getSimpleName();
 
     public static void run() {
         methodReference();
@@ -36,13 +40,14 @@ public class ReferenceStaticMethod {
         String name = Thread.currentThread().getName();
         for (int i = 0; i < 50; i++)
         {
-            System.out.printf("%s: %d%n", name, i);
+            Log.i(TAG, String.format("%s: %d%n", name, i));
             try
             {
                 Thread.sleep((int) (Math.random()*50));
             }
             catch (InterruptedException ie)
             {
+                ie.printStackTrace();
             }
         }
     }

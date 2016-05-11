@@ -1,12 +1,17 @@
 package com.github.monchenkoid.java_eight.methodreference;
 
+import android.util.Log;
+
 /**
  * @author Iryna Monchenko
  * @version on 05.05.2016
  */
 public class ReferenceDemo {
+
+    private static final String TAG = ReferenceDemo.class.getSimpleName();
+
     public static void commonMethod() {
-        System.out.println("This method is already defined.");
+        Log.i(TAG, "This method is already defined.");
     }
 
     public void implement() {

@@ -1,5 +1,7 @@
 package com.github.monchenkoid.java_eight.methodreference;
 
+import android.util.Log;
+
 /**
  * @author Iryna Monchenko
  * @version on 06.05.2016
@@ -7,11 +9,13 @@ package com.github.monchenkoid.java_eight.methodreference;
 
 public class ReferenceConstructors {
 
+    private static final String TAG = ReferenceConstructors.class.getSimpleName();
+
     public static void run() {
         EmployeeProvider provider = Employee::new;
         Employee emp = provider.getEmployee("John Doe", 47);
-        System.out.printf("Name: %s%n", emp.name);
-        System.out.printf("Age: %d%n", emp.age);
+        Log.i(TAG, String.format("Name: %s%n", emp.name));
+        Log.i(TAG, String.format("Age: %d%n", emp.age));
     }
 }
     class Employee

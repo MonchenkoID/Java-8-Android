@@ -1,5 +1,7 @@
 package com.github.monchenkoid.java_eight.function;
 
+import android.util.Log;
+
 import java.util.function.BiFunction;
 
 /**
@@ -8,9 +10,11 @@ import java.util.function.BiFunction;
  */
 public class JavaBiFunction {
 
+    private static final String TAG = JavaBiFunction.class.getSimpleName();
+
     public static void run() {
         String result = calc((a, b) -> ": " + (a * b), 3, 5);
-        System.out.println(result);
+        Log.i(TAG, result);
         concat();
     }
 
@@ -23,6 +27,6 @@ public class JavaBiFunction {
             return x + y;
         };
 
-        System.out.println(bi.apply("java2s.com", " tutorial"));
+        Log.i(TAG, bi.apply("java2s.com", " tutorial"));
     }
 }
