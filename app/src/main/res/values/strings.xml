@@ -1,29 +1,21 @@
 <resources>
     <string name="app_name">Java eight</string>
-    <string name="consumer">Consumer</string>
-    <string name="biconsumer">BiConsumer</string>
-    <string name="function">Function</string>
-    <string name="bifunction">BiFunction</string>
-    <string name="predicate">Predicate</string>
-    <string name="bipredicate">BiPredicate</string>
-    <string name="supplier">Supplier</string>
-    <string name="binary_operator">Supplier</string>
 
     <string-array name="features">
         <item>FUNCTIONS</item>
-        <item>@string/consumer</item>
-        <item>@string/biconsumer</item>
-        <item>@string/function</item>
-        <item>@string/bifunction</item>
-        <item>@string/predicate</item>
-        <item>@string/bipredicate</item>
-        <item>@string/supplier</item>
-        <item>@string/binary_operator</item>
+        <item>Consumer</item>
+        <item>BiConsumer</item>
+        <item>Function</item>
+        <item>BiFunction</item>
+        <item>Predicate</item>
+        <item>BiPredicate</item>
+        <item>Supplier</item>
+        <item>Binary operator</item>
         <item>METHOD REFERENCE</item>
-        <item>To a static method</item>
-        <item>To a bound non-static method</item>
-        <item>To an unbound non-static method</item>
-        <item>To a constructor</item>
+        <item>Reference to a static method</item>
+        <item>Reference to a bound non-static method</item>
+        <item>Reference to an unbound non-static method</item>
+        <item>Reference to a constructor</item>
     </string-array>
 
 </resources>
