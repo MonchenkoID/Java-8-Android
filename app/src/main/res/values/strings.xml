@@ -16,6 +16,8 @@
         <item>Reference to a bound non-static method</item>
         <item>Reference to an unbound non-static method</item>
         <item>Reference to a constructor</item>
+        <item>INTERFACE METHODS</item>
+        <item>Default method</item>
     </string-array>
 
 </resources>

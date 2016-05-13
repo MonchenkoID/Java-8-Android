@@ -13,6 +13,8 @@ import com.github.monchenkoid.java_eight.function.JavaConsumer;
 import com.github.monchenkoid.java_eight.function.JavaFunction;
 import com.github.monchenkoid.java_eight.function.JavaPredicate;
 import com.github.monchenkoid.java_eight.function.JavaSupplier;
+import com.github.monchenkoid.java_eight.interfacemethods.Car;
+import com.github.monchenkoid.java_eight.interfacemethods.CarDefault;
 import com.github.monchenkoid.java_eight.methodreference.ReferenceBoundNonStatic;
 import com.github.monchenkoid.java_eight.methodreference.ReferenceConstructors;
 import com.github.monchenkoid.java_eight.methodreference.ReferenceStaticMethod;
@@ -30,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         list.setAdapter(adapter);
         list.setOnItemClickListener((adapterView, view, i, l) -> {
             String strings = arrayList[i];
-            switch (strings){
+            switch (strings) {
                 case Constants.CONSUMER:
                     JavaConsumer.run();
                     break;
@@ -67,9 +69,14 @@ public class MainActivity extends AppCompatActivity {
                 case Constants.REF_CONSTRUCTOR:
                     ReferenceConstructors.run();
                     break;
-
-                    //        <item> FUNCTIONS</item>
-             //   <item>METHOD REFERENCE</item>
+                case Constants.INTERFACE_DEFAULT:
+                    Car car = new Car();
+                    car.demo();
+                    CarDefault carDefault = new CarDefault();
+                    carDefault.demo();
+                    break;
+                //        <item> FUNCTIONS</item>
+                //   <item>METHOD REFERENCE</item>
 
             }
         });
