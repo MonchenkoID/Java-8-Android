@@ -1,4 +1,4 @@
-package com.github.monchenkoid.java_eight.interfacemethods;
+package com.github.monchenkoid.java_eight.interfacemethods.defaultmethods;
 
 /**
  * @author Iryna Monchanka

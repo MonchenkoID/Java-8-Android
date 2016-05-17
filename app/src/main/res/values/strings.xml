@@ -18,6 +18,7 @@
         <item>Reference to a constructor</item>
         <item>INTERFACE METHODS</item>
         <item>Default method</item>
+        <item>Static method</item>
         <item>Run streams</item>
     </string-array>
 

@@ -13,8 +13,10 @@ import com.github.monchenkoid.java_eight.function.JavaConsumer;
 import com.github.monchenkoid.java_eight.function.JavaFunction;
 import com.github.monchenkoid.java_eight.function.JavaPredicate;
 import com.github.monchenkoid.java_eight.function.JavaSupplier;
-import com.github.monchenkoid.java_eight.interfacemethods.Car;
-import com.github.monchenkoid.java_eight.interfacemethods.CarDefault;
+import com.github.monchenkoid.java_eight.interfacemethods.defaultmethods.Car;
+import com.github.monchenkoid.java_eight.interfacemethods.defaultmethods.CarDefault;
+import com.github.monchenkoid.java_eight.interfacemethods.staticmethods.Circle;
+import com.github.monchenkoid.java_eight.interfacemethods.staticmethods.Drawable;
 import com.github.monchenkoid.java_eight.methodreference.ReferenceBoundNonStatic;
 import com.github.monchenkoid.java_eight.methodreference.ReferenceConstructors;
 import com.github.monchenkoid.java_eight.methodreference.ReferenceStaticMethod;
@@ -77,6 +79,10 @@ public class MainActivity extends AppCompatActivity {
                     car.demo();
                     CarDefault carDefault = new CarDefault();
                     carDefault.demo();
+                    break;
+                case Constants.INTERFACE_STATIC:
+                    Circle circle = new Circle(10, 20, 5);
+                    circle.draw(Drawable.rgb(0x80, 0x60, 0x40));
                     break;
                 case Constants.RUN_STREAMS:
                     try {
