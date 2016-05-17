@@ -19,6 +19,9 @@ import com.github.monchenkoid.java_eight.methodreference.ReferenceBoundNonStatic
 import com.github.monchenkoid.java_eight.methodreference.ReferenceConstructors;
 import com.github.monchenkoid.java_eight.methodreference.ReferenceStaticMethod;
 import com.github.monchenkoid.java_eight.methodreference.ReferenceUnBoundNonStatic;
+import com.github.monchenkoid.java_eight.streams.Server;
+
+import java.text.ParseException;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -75,9 +78,13 @@ public class MainActivity extends AppCompatActivity {
                     CarDefault carDefault = new CarDefault();
                     carDefault.demo();
                     break;
-                //        <item> FUNCTIONS</item>
-                //   <item>METHOD REFERENCE</item>
-
+                case Constants.RUN_STREAMS:
+                    try {
+                        Server.serverListExample();
+                    } catch (ParseException e) {
+                        e.printStackTrace();
+                    }
+                    break;
             }
         });
     }

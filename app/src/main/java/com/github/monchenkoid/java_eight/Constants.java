@@ -21,4 +21,5 @@ public interface Constants {
     String REF_UNBOUND_NONSTATIC_METHOD = "Reference to an unbound non-static method";
     String REF_CONSTRUCTOR = "Reference to a constructor";
     String INTERFACE_DEFAULT = "Default method";
+    String RUN_STREAMS = "Run streams";
 }
