@@ -19,6 +19,7 @@
         <item>INTERFACE METHODS</item>
         <item>Default method</item>
         <item>Static method</item>
+        <item>Functional interface</item>
         <item>Run streams</item>
     </string-array>
 

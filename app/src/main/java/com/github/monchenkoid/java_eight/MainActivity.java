@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import com.github.monchenkoid.java_eight.annotations.FunctionalInterfaceSample;
 import com.github.monchenkoid.java_eight.function.JavaBiConsumer;
 import com.github.monchenkoid.java_eight.function.JavaBiFunction;
 import com.github.monchenkoid.java_eight.function.JavaBiPredicate;
@@ -83,6 +84,9 @@ public class MainActivity extends AppCompatActivity {
                 case Constants.INTERFACE_STATIC:
                     Circle circle = new Circle(10, 20, 5);
                     circle.draw(Drawable.rgb(0x80, 0x60, 0x40));
+                    break;
+                case Constants.FUNCTIONAL_INTERFACE:
+                    FunctionalInterfaceSample.calculate();
                     break;
                 case Constants.RUN_STREAMS:
                     try {
