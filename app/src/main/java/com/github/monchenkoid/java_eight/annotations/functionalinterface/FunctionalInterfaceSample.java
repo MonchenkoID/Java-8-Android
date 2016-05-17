@@ -1,4 +1,4 @@
-package com.github.monchenkoid.java_eight.annotations;
+package com.github.monchenkoid.java_eight.annotations.functionalinterface;
 
 import android.util.Log;
 

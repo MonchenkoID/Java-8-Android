@@ -2,10 +2,12 @@ package com.github.monchenkoid.java_eight;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-import com.github.monchenkoid.java_eight.annotations.FunctionalInterfaceSample;
+import com.github.monchenkoid.java_eight.annotations.functionalinterface.FunctionalInterfaceSample;
+import com.github.monchenkoid.java_eight.annotations.repetableannotation.ToDo;
 import com.github.monchenkoid.java_eight.function.JavaBiConsumer;
 import com.github.monchenkoid.java_eight.function.JavaBiFunction;
 import com.github.monchenkoid.java_eight.function.JavaBiPredicate;
@@ -92,6 +94,16 @@ public class MainActivity extends AppCompatActivity {
                     try {
                         Server.serverListExample();
                     } catch (ParseException e) {
+                        e.printStackTrace();
+                    }
+                    break;
+                case Constants.REPEATABLE_ANNOTATIONS:
+                    ToDo[] annotations = new ToDo[0];
+                    try {
+                        annotations = Class.forName("com.github.monchenkoid.java_eight.annotations.repetableannotation.Account").getAnnotationsByType(ToDo.class);
+                        for (ToDo annotation: annotations)
+                            Log.i("Repeatable annotation: ", annotation.value());
+                    } catch (ClassNotFoundException e) {
                         e.printStackTrace();
                     }
                     break;

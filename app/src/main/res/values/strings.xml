@@ -21,6 +21,7 @@
         <item>Static method</item>
         <item>Functional interface</item>
         <item>Run streams</item>
+        <item>Repeatable annotations"</item>
     </string-array>
 
 </resources>

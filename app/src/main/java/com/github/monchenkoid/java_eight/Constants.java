@@ -22,6 +22,7 @@ public interface Constants {
     String REF_CONSTRUCTOR = "Reference to a constructor";
     String INTERFACE_DEFAULT = "Default method";
     String INTERFACE_STATIC = "Static method";
+    String REPEATABLE_ANNOTATIONS = "Repeatable annotations";
     String FUNCTIONAL_INTERFACE = "Functional interface";
     String RUN_STREAMS = "Run streams";
 }
