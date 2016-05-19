@@ -17,7 +17,9 @@ import com.github.monchenkoid.java_eight.function.JavaFunction;
 import com.github.monchenkoid.java_eight.function.JavaPredicate;
 import com.github.monchenkoid.java_eight.function.JavaSupplier;
 import com.github.monchenkoid.java_eight.interfacemethods.defaultmethods.Car;
+import com.github.monchenkoid.java_eight.interfacemethods.defaultmethods.CarDefaultDrivableChildOfChild;
 import com.github.monchenkoid.java_eight.interfacemethods.defaultmethods.CarDefault;
+import com.github.monchenkoid.java_eight.interfacemethods.defaultmethods.CarDefaultChildOfChild;
 import com.github.monchenkoid.java_eight.interfacemethods.staticmethods.Circle;
 import com.github.monchenkoid.java_eight.interfacemethods.staticmethods.Drawable;
 import com.github.monchenkoid.java_eight.methodreference.ReferenceBoundNonStatic;
@@ -82,6 +84,10 @@ public class MainActivity extends AppCompatActivity {
                     car.demo();
                     CarDefault carDefault = new CarDefault();
                     carDefault.demo();
+                    CarDefaultChildOfChild tessst = new CarDefaultChildOfChild();
+                    tessst.demo();
+                    CarDefaultDrivableChildOfChild omg = new CarDefaultDrivableChildOfChild();
+                    omg.demo();
                     break;
                 case Constants.INTERFACE_STATIC:
                     Circle circle = new Circle(10, 20, 5);
