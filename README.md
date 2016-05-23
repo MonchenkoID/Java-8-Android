@@ -15,3 +15,5 @@
 * https://habrahabr.ru/post/203026/
 * http://www.lambdafaq.org/
 * http://www.tutorialspoint.com/java8/java8_functional_interfaces.htm
+* http://www.angelikalanger.com/Lambdas/LambdaReference.pre-release.pdf
+* https://habrahabr.ru/post/188850/
