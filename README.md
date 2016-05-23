@@ -10,3 +10,8 @@
 * https://blog.idrsolutions.com/2015/02/java-8-method-references-explained-5-minutes/
 * https://blog.idrsolutions.com/2015/03/java-8-repeating-annotation-explained-in-5-minutes/
 * https://blog.idrsolutions.com/2015/03/java-8-consumer-supplier-explained-in-5-minutes/
+* https://habrahabr.ru/post/224593/
+* https://habrahabr.ru/company/golovachcourses/blog/228603/
+* https://habrahabr.ru/post/203026/
+* http://www.lambdafaq.org/
+* http://www.tutorialspoint.com/java8/java8_functional_interfaces.htm
